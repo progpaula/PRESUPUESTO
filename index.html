@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CONTROL DE PRESUPUESTO</title>
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <center><Font face="Helvetica"><h5>PAULA ANDREA VIVIESCAS GALVIS </h5></Font></center>
+        </div>
+    </nav>
+
+    <center><div class="textBalance"><h3 id="jh">ANALISIS DEL PRESUPUESTO</h3><p id="porcentajeBalance"></p></div></center>
+
+    <section>
+        <div class="section">
+            <center><font face="Impact"><h4>DATOS PARA EL ANALISIS PRESUPUESTAL </h4></font></center><br>
+            <form id="form">
+                <div class="divForm">
+                    <font face="Trebuchet MS"><h6>SELECCIONA INGRESO O EGRESO</h6></font>
+                    <select name="kind" id="kind" required>
+                        <option value="ingreso">Ingreso</option>
+                        <option value="egreso">Egreso</option>
+                    </select>
+                </div>
+
+                <div class="divForm">
+                    <font face="Trebuchet MS"><h6>INGRESA LA CANTIDAD DE DINERO</h6></font>
+                    <input id="dinero" type="number" required>
+                </div>
+
+                <div class="divForm">
+                    <font face="Trebuchet MS"><h6>INGRESA LA FECHA</h6></font>
+                    <input id="fecha" type="date" required>
+                </div>
+
+                <div class="divForm">
+                    <font face="Trebuchet MS"><h6>Ingresa el comprobante</h6></font>
+                    <input id="file" type="file">
+                </div>
+
+                <div class="divForm">
+                    <textarea name="" id="descripcion" cols="10" rows="5" placeholder="Descripcion"></textarea>
+                </div>
+
+                <input type="submit" value="COMENZAR ANALISIS" style="background-color: blue;">
+            </form>
+        </div>
+
+            <div id="fatherChildren"></div>
+    </section>
+
+
+</body>
+<script src="main.js"></script>
+</html>

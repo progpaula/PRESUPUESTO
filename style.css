@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    padding: 20px;
+    background-color: rgb(65, 121, 240);
+    color: rgb(0, 0, 0);
+}
+body{
+    background-image: url(https://www.lifeder.com/wp-content/uploads/2018/06/concepto-presupuesto-ilustracion-gastos-administracion-1024x736.jpg);
+}
+.section{
+    margin: 40px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+    border: 9px solid rgb(0, 0, 0);
+}
+section{
+    display: flex;
+}
+.divForm *{
+    width: 100%;
+}
+.divForm{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+input, select, textarea{
+    width: 100%;
+    border: none;
+    padding: 5px;
+}
+.children{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 40%;
+}
+#fatherChildren{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.quit{
+    float: right;
+    cursor: pointer;
+}
+#form{
+    width: 100%;
+}
+.textBalance{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+@media (max-width: 1110px) {
+    section {
+        display: grid;
+        justify-items: center;
+      }
+      #fatherChildren {
+        justify-content: center;
+      }
+}
